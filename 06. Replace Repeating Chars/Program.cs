@@ -1,0 +1,28 @@
+﻿using System;
+using System.Text;
+
+namespace _06._Replace_Repeating_Chars
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+
+            string output = string.Empty;
+
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+
+                if (input[i] != input[i + 1])
+                {
+                    output += input[i];
+                }
+
+            }
+            output += input[input.Length - 1];
+
+            Console.WriteLine(output);
+        }
+    }
+}
